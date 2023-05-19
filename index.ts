@@ -6,12 +6,9 @@ import { Replicate } from "langchain/llms/replicate";
 const http = require('http');
 const https = require('https');
 
-const { Configuration, OpenAIApi } = require("openai");
+const { OpenAIApi } = require("openai");
 
-const configuration = new Configuration({
-  apiKey: "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",
-});
-const openai = new OpenAIApi(configuration);
+const openai = new OpenAIApi();
 
 const storage = multer.diskStorage({
   destination(req, file, cb) {
