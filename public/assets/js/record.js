@@ -1,7 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable no-alert */
-/* eslint-disable no-restricted-globals */
-// initialize elements we'll use
 const recordButton = document.getElementById('recordButton');
 const recordButtonImage = recordButton.firstElementChild;
 const recordedAudioContainer = document.getElementById('recordedAudioContainer');
