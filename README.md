@@ -1,4 +1,4 @@
-# Speech To Text to Image Generation
+# Speech to Text to Image Generation
 
 I just built an app where you can record your voice and see the text extracted from your voice and the image generated.
 
