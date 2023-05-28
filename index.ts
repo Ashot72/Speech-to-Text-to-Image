@@ -3,12 +3,15 @@ const fs = require('fs');
 const express = require('express');
 const multer = require('multer');
 import { Replicate } from "langchain/llms/replicate";
+import { Configuration } from "openai";
 const http = require('http');
 const https = require('https');
 
 const { OpenAIApi } = require("openai");
 
-const openai = new OpenAIApi();
+const openai = new OpenAIApi(new Configuration({ 
+  apiKey: process.env.OPENAI_API_KEY,
+ }))
 
 const storage = multer.diskStorage({
   destination(req, file, cb) {
